@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>3.1.5 COntrolador de Acceso Directo a Memoria (DMA)</title>
+</head>
+<body>
+<header>
+		<nav>
+			<li><a href="3.1.html">3.1 Chip set</a></li>
+			<li><a href="1.2.1.1.html">3.1.1 Unidad Central de Procesamineto</a></li>
+			<li><a href="3.1.2.html">3.1.2 Controlador de bus</a></li>
+			<li><a href="3.1.3.html">3.1.3 Puertas de Entrada y Salida</a></li>
+			<li><a href="3.1.4.html">3.1.4 Controlador de interrupciones</a></li>
+			<li><a href="3.1.5.html">3.1.5 Controlador de Acceso Directo a Memoria (DMA)</a></li>
+			<li><a href="3.1.6.html">3.1.6 Circuitos de Temporizacion</a></li>
+			<li><a href="3.1.7.html">3.1.7 Circuitos de Control</a></li>
+			<li><a href="3.1.8.html">3.1.8 Controladores de Video</a></li>
+		</nav>
+	</header>
+
+	<CENTER><H2>3.1.5 Controlador de Acceso Directo a Memoria (DMA)</H2></CENTER>
+
+	<center>
+		El mecanismo de acceso directo a memoria está controlado por un
+chip específico, el DMAC ("DMA Controller"), que permite realizar
+estos intercambios sin apenas intervención del procesador.
+	</center>
+
+	<center>
+		Los canales del segundo DMAC está asignado a las direcciones 0C0 0DFh y son de 16 bits. Pueden mover 2 Bytes (de posiciones contiguas) cada vez. Cada canal tiene asignada una prioridad para el caso de recibirse simultáneamente varias peticiones (los números más bajos tienen prioridad más alta). 
+	</center>
+
+	<center>
+		Pueden ser utilizados por cualquier dispositivo que los necesite
+(suponiendo naturalmente que esté diseñado para soportar este modo
+de operación). Cada sistema los asigna de forma arbitraria, pero hay
+algunos cuya asignación es estándar.
+	</center>
+
+	<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\DMA.png" height="200" width="300"></center>
+
+	<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad3.html"><input type="button" value="Unidad 3"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+	
+</body>
+</html>

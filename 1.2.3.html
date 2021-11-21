@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>1.2.3 Manejo de la entrada/salida</title>
+</head>
+<body>
+<center><h2>1.2.3 Manejo de la entrada/salida.</h2></center>
+<center><h2>1.2.3.1 Módulos de Entrada/Salida</h2></center>
+
+<center>Los módulos de entrada y salida están conectados con el procesador y la memoria principal, y cada uno controla uno o más dispositivos externos. La arquitectura de E/S es su interfaz con el exterior, esta arquitectura se diseña de manera que permita una forma sistemática de controlar las interacciones con el mundo exterior y proporcione al sistema operativo la información que necesita para gestionar la actividad de E/S. Hay tres técnicas de E/S principales:</center>
+
+<center><h2>1.2.3.2. Entrada/Salida Programada</h2></center>
+<center>Se produce bajo el control directo y continuo del programa que solicita la operación de E/S. tanto en la entrada y salida programada como con interrupciones, el procesador es responsable de extraer los datos de la memoria en una salida, y almacenar los datos en la memoria principal. El problema con la E/S es que el procesador tiene que esperar un tiempo considerable hasta que el modulo en cuestión esté preparado para recibir o transmitir datos</center>
+
+<center><h2>1.2.3.3. Entrada y salida mediante interruptores</h2></center>
+<center>El programa genera una orden de E/S y después continúa ejecutándose hasta que el hardware lo interrumpe para indicar que la operación ha concluido. La entrada y salida con interrupciones, aunque es más eficiente que la sencilla, también requiere la intervención activa del procesador para transferir los datos entre la memoria y el módulo de E/S.</center>
+
+<center><h2>1.2.3.4 Acceso directo a memoria</h2></center>
+<center>Un procesador de E/S específico toma el control de la operación para transferir un bloque de datos. El módulo DMA(Acceso Directo a Memoria) es capaz de imitar al procesador y, de hecho, es capaz de transferir datos desde memoria a través del bus del sistema.</center>
+
+<center><h2>1.2.3.5 Canales y Procesadores de Entrada/Salida.</h2></center>
+<center>El canal de entrada y salida representa una ampliación del concepto de DMA. Un canal de entrada y salida puede ejecutar instrucciones de entrada y salida, lo que le confiere un control completo sobre las operaciones de entrada y salida. Cada dispositivo o pequeño grupo de dispositivos es manejado por un controlador o módulo de E/S, así el canal de entrada y salida se utiliza en lugar de la CPU para controlar estos controladores de E/S. Un canal multiplexor puede manejar la entrada y salida de varios dispositivos al mismo tiempo.</center>
+
+<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad1.html"><input type="button" value="Unidad 1"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>

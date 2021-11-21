@@ -1,0 +1,8 @@
+body{
+    margin: 100;
+    padding: 100;
+    background: url(Minimalista.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}

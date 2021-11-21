@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>1.1.3 De multiprocesamiento</title>
+</head>
+<body>
+
+<header>
+	<nav>
+		<ul>
+			<li><a href="1.1.html">1.1 Modelos de arquitectura de computo</a></li>
+			<li><a href="1.1.1.html">1.1.1 Clasicas</a></li>
+			<li><a href="1.1.2.html">1.1.2 Segmentadas</a></li>
+			<li><a href="1.1.3.html">1.1.3 De multiprocesamiento</a></li>
+		</ul>
+	</nav>
+</header>
+
+<center><h1>1.1.3 De multiprocesamiento</h1></center>
+
+<P><CENTER>Cuando se desea incrementar el desempeño más aya de lo que permite la técnica de segmentación del cauce (limite teórico de una instrucción por ciclo de reloj), se requiere utilizar más de un procesador para la ejecución del programa de aplicación.
+Las CPU de multiprocesamiento se clasifican de la siguiente manera (Clasificación de Flynn):</CENTER></P>
+
+<li>
+SISO – (Single Instruction, Single Operand)          computadoras Monoprocesador
+</li>
+<li>
+SIMO – (Single Instruction, Multiple Operand)     procesadores vectoriales, Exenciones MMX
+</li>
+<li>
+MISO – (Multiple Instruction, Single Operand)     No implementado
+</li>
+<li>
+MIMO – (Multiple Instruction, Multiple Operand) sistemas SMP, Clusters, GPUs.
+</li>
+
+<P><center>Procesadores vectoriales – Son computadoras pensadas para aplicar un mismo algoritmo numérico a una serie de datos matriciales, en especial en la simulación de sistemas físicos complejos, tales como simuladores para predecir el clima, explosiones atómicas, reacciones químicas complejas, etc.</center></P>
+
+<P><center>La mayoría de los procesadores modernos incluye algunas instrucciones de tipo vectorial, tales como las extensiones al conjunto de instrucciones tales como MMX y SSE. Estas instrucciones les permiten procesar flujos multimedia más eficientemente.</center></P>
+
+<P><center>Los Procesadores Digitales de Señales (DSP), son procesadores especializados en el procesamiento de señales tales como audio, vídeo, radar, sonar, radio, etc. Cuentan con instrucciones tipo vectorial que los hace muy aptos para dicha aplicación. Suelen utilizarse en conjunto con un microcontrolador en dispositivos como reproductores de audio, reproductores de dvd y Blueray, teléfonos celulares, sistemas de entretenimiento, sistemas de adquisición de datos, instrumentos médicos, controles industriales, etc.</center></P>
+
+<p><center>
+	En los sistemas SMP (Simetric Multiprocesesors), varios procesadores comparten la misma memoria principal y periféricos de I/O, Normalmente conectados por un bus común. Se conocen como simétricos, ya que ningún procesador toma el papel de maestro y los demás de esclavos, sino que todos tienen derechos similares en cuanto al acceso a la memoria y periféricos y ambos son administrados por el sistema operativo.
+</center></p>
+
+<p><center>
+	Pueden formarse con varios núcleos en un solo circuito integrado o con varios circuitos integrados en una misma tarjeta madre. La primera opción ha sido popularizada al hacerse más económicos los procesadores multinucleo de los principales fabricantes y con su uso en sistemas de gama media y baja, e inclusive en teléfonos celulares y tabletas.
+</center></p>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\2.jpg" height="200" width="400"></center>
+
+<center>
+Los Clústers son conjuntos de computadoras independientes conectadas en una red de área local o por un bis de interconexión y que trabajan cooperativamente para resolver un problema. Es clave en su funcionamiento contar con un sistema operativo y programas de aplicación capaces de distribuir el trabajo entre las computadoras de la red.
+</center>
+
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\4.jpg" height="200" width="400"></center>
+
+
+<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad1.html"><input type="button" value="Unidad 1"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+
+</body>
+</html>

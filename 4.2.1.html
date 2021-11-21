@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title></title>
+</head>
+<body>
+<header>
+		<nav>
+			<li><a href="4.1.html">4.1 Aspectos Basicos de la computacion paralela</a></li>
+			<li><a href="4.2.html">4.2 Tipos de compútacion paralela</a></li>
+			<li><a href="4.2.1.html">4.2.1 Clasificacion</a></li>
+			<li><a href="4.2.1.html">4.2.2 Arquitectura de computadoras secuenciales </a></li>
+			<li><a href="4.2.3.html">4.2.3 Organizacion de direcciones de memoria </a></li>
+		</nav>
+	</header>
+
+	<center><h1>4.2.1 Clasificacion</h1></center>
+	<center><h2>4.2.2 Arquitectura de computadoras secuenciales</h2></center>
+	<center><h3>4.2.2.1 Taxonomia de Flyyn</h3></center>
+
+	<center><ol>
+		Probablemente la clasificación más popular de computadores sea la clasificación de Flynn. Esta taxónoma de las arquitecturas está basada en la clasificación atendiendo al flujo de datos e instrucciones en un sistema.
+	</center></ol>
+
+	<center><ol>
+		SISD (Single Instruction stream, Single Data stream) Flujo único de instrucciones y flujo único de datos. Este el concepto de arquitectura serie de Von Neumann donde, en cualquier momento, sólo se está ejecutando una única instrucción. A menudo a los SISD se les conoce como computadores serie escalares. Todas las maquinas SISD poseen un registro simple que se llama contador de programa que asegura la ejecución en serie del programa.
+	</center></ol>
+
+	<center><ol>
+	MISD (Multiple Instruction stream, Single Data stream) Flujo múltiple de instrucciones y único flujo de datos. Esto significa que varias instrucciones actúan sobre el mismo y único trozo de datos. Este tipo de máquinas se pueden interpretar de dos maneras. Una es considerar la clase de máquinas que requerirían que unidades de procesamiento diferentes recibieran instrucciones distintas operando sobre los mismos datos. 	
+	</center></ol>
+
+	<center><ol>
+		SIMD (Single Instruction stream, Multiple Data stream) Flujo de instrucción simple y flujo de datos múltiple. Esto significa que una única instrucción es aplicada sobre diferentes datos al mismo tiempo. En las máquinas de este tipo, varias unidades de procesado diferentes son invocadas por una única unidad de control. 
+	</center></ol>
+
+	<center><ol>
+		MIMD (Multiple Instruction stream, Multiple Data stream) Flujo de instrucciones múltiple y flujo de datos múltiple. Son máquinas que poseen varias unidades procesadoras en las cuales se pueden realizar múltiples instrucciones sobre datos diferentes de forma simultánea. Las MIMD son las más complejas, pero son también las que potencialmente ofrecen una mayor eficiencia en la ejecución concurrente o paralela.
+	</center></ol>
+
+	<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\clasifi.jpg" height="300" width="400"></center>
+
+	<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad4.html"><input type="button" value="Unidad 4"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>

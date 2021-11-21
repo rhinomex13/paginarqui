@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>4.2 Tipos de computacion paralela</title>
+</head>
+<body>
+<header>
+		<nav>
+			<li><a href="4.1.html">4.1 Aspectos Basicos de la computacion paralela</a></li>
+			<li><a href="4.2.html">4.2 Tipos de compútacion paralela</a></li>
+			<li><a href="4.2.1.html">4.2.1 Clasificacion</a></li>
+			<li><a href="4.2.1.html">4.2.2 Arquitectura de computadoras secuenciales </a></li>
+			<li><a href="4.2.3.html">4.2.3 Organizacion de direcciones de memoria </a></li>
+		</nav>
+	</header>
+
+	<center><h2>4.2 Tipos de computacion paralela</h2></center>
+
+	<center><h3>Paralelismo a nivel de bit:</h3></center>
+
+	<center>
+		Desde el advenimiento de la integración a gran escala (VLSI) como tecnología de fabricación de chips de computadora en la década de 1970 hasta alrededor de 1986, la aceleración en la arquitectura de computadores se lograba en gran medida duplicando el tamaño de la palabra en la computadora, la cantidad de información que el procesador puede manejar por ciclo. 
+	</center>
+
+	<center><h3>Paralelismo a nivel de instruccions:</h3></center>
+
+	<center>
+	Un programa de ordenador es, en esencia, una secuencia de instrucciones ejecutadas por un procesador. Estas instrucciones pueden reordenarse y combinarse en grupos que luego son ejecutadas en paralelo sin cambiar el resultado del programa. Esto se conoce como paralelismo a nivel de instrucción. 	
+	</center>
+
+	<center>
+		Los procesadores modernos tienen ''pipeline'' de instrucciones de varias etapas. Cada etapa en el pipeline corresponde a una acción diferente que el procesador realiza en la instrucción correspondiente a la etapa; un procesador con un pipelinede N etapas puede tener hasta n instrucciones diferentes en diferentes etapas de finalización.
+	</center>
+
+	<center>
+		El scoreboarding y el algoritmo de Tomasulo —que es similar a scoreboarding pero hace uso del renombre de registros— son dos de las técnicas más comunes para implementar la ejecución fuera de orden y la paralelización a nivel de instrucción.
+	</center>
+
+	<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\clasi.jpg" height="100" width="300"></center>
+
+
+	<center>
+		Un pipeline canónico de cinco etapas en una máquina RISC (IF = Pedido de Instrucción, ID = Decodificación de instrucción, EX = Ejecutar, MEM = Acceso a la memoria, WB = Escritura).
+	</center>
+
+	<center><h3>Paralelismo de datos:</h3></center>
+
+	<center>
+		El paralelismo de datos es el paralelismo inherente en programas con ciclos, que se centra en la distribución de los datos entre los diferentes nodos computacionales que deben tratarse en paralelo. La paralelización de ciclos conduce a menudo a secuencias similares de operaciones —no necesariamente idénticas— o funciones que se realizan en los elementos de una gran estructura de datos. Muchas de las aplicaciones científicas y de ingeniería muestran paralelismo de datos.
+	</center>
+
+	<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\para.jpg" height="100" width="300"></center>
+
+	<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad4.html"><input type="button" value="Unidad 4"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>

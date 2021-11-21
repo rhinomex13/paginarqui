@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>1.2.2 Segmentadas</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="1.1.html">1.1 Modelos de arquitectura de computo</a></li>
+			<li><a href="1.1.1.html">1.1.1 Clasicas</a></li>
+			<li><a href="1.1.2.html">1.1.2 Segmentadas</a></li>
+			<li><a href="1.1.3.html">1.1.3 De multiprocesamiento</a></li>
+		</ul>
+	</nav>
+</header>
+
+<center><h2>1.1.2 Segnmentadas</h2></center>
+
+<CENTER>Las arquitecturas segmentadas o con segmentación del cauce buscan mejorar el desempeño realizando paralelamente varias etapas del ciclo de instrucción al mismo tiempo. El procesador se divide en varias unidades funcionales independientes y se dividen entre ellas el procesamiento de las instrucciones.</CENTER>
+
+<center><h2>Ejemplo:</h2></center>
+
+<center>Supongamos  que un procesador simple tiene un ciclo de instrucción sencillo consistente solamente en una etapa de búsqueda del código de instrucción y en otra etapa de ejecución de la instrucción. En un procesador sin segmentación del cauce, las dos etapas se realizarían de manera secuencial para cada una de las instrucciones, como lo muestra la siguiente figura.</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\7.jpg" height="100" width="300"></center>
+
+<h4><center>Arquitectura Mauchly-Eckert (Von Newman)</center></h4>
+
+<CENTER>Búsqueda y ejecución en secuencia de tres instrucciones en un procesador sin segmentación del cause
+En un procesador con segmentación del cauce, cada una de estas etapas se asigna a una unidad funcional diferente, la búsqueda a la unidad de búsqueda y la ejecución a la unidad de ejecución. De esta analogía proviene el nombre en inglés: Pipelining o entubamiento.</CENTER>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\8.jpg" height="100" width="300"></center>
+
+<center>En este esquema sigue tomando el mismo número de ciclos de reloj (el mismo tiempo), pero como se trabaja en varias instrucciones al mismo tiempo, el número promedio de instrucciones por segundo se multiplica. La mejora en el rendimiento no es proporcional al número de segmentos en el cauce debido a que cada etapa no toma el mismo tiempo en realizarse, además de que se puede presentar competencia por el uso de algunos recursos como la memoria principal.</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\9.jpg" height="100" width="300"></center>
+
+
+
+<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad1.html"><input type="button" value="Unidad 1"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>

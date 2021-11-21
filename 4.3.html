@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>4.3 y 4.3.1</title>
+</head>
+<body>
+
+<center><h2>4.3 Sistemas de memoria (compartida) Multiprocesadores</h2></center>
+<center>
+	Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores interconectados que comparten un mismo sistema de memoria.
+</center>
+
+<center>
+	Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida. Tienen un único espacio de direcciones para todos los procesadores y los mecanismos de comunicación se basan en el paso de mensajes desde el punto de vista del programador.
+</center>
+
+<center>
+	Dado que los multiprocesadores comparten diferentes módulos de memoria, pudiendo acceder a un mismo módulo varios procesadores, a los multiprocesadores también se les llama sistemas de memoria compartida.
+</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\4.3.jpg" height="200" width="400"></center>
+
+<center>
+	Para evitar este problema se usa una variedad de técnicas de programación incluyendo semáforos y otras comprobaciones y bloqueos que permiten a una sola copia del programa cambiar de forma exclusiva ciertos valores.
+</center>
+
+<center>
+	Para evitar este problema se usa una variedad de técnicas de programación incluyendo semáforos y otras comprobaciones y bloqueos que permiten a una sola copia del programa cambiar de forma exclusiva ciertos valores.
+</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\4.3.1.jpg" height="200" width="400"></center>
+
+<center><b>Multitarea:</b>Permite a múltiples procesos compartir una única CPU, múltiples CPUs pueden ser utilizados para ejecutar múltiples hilos dentro de un único proceso.
+</center>
+
+<center><h2>4.3.1 Redes de Interconexion Dinamicas O Indirectas</h2></center>
+
+<center>
+	Uno de los criterios más importantes para la clasificación de las redes es el que tiene en cuenta la situación de la red en la máquina paralela, dando lugar a dos familias de redes: redes estáticas y redes dinámicas. Una red estática es una red cuya topología queda definida de manera definitiva y estable durante la construcción de la máquina paralela.
+</center>
+
+<center>
+Una red dinámica es una red cuya topología puede variar durante el curso de la ejecución de un programa paralelo o entre dos ejecuciones de programas. La red está constituida por elementos materiales específicos, llamados commutadores o switches.	
+</center>
+
+<center>
+	Las redes dinámicas se utilizan sobre todo en los multiprocesadores. En este caso, la red une los procesadores a los bancos de memoria central. Cualquier acceso de un procesador a la memoria (bien sea para acceder a los datos o a las instrucciones) debe pasar a través de la red, por lo se dice que la red tiene un acoplamiento fuerte.
+</center>
+
+<center><h2>4.3.1.1 Redes De Medio Compartido</h2></center>
+
+<center>
+	En el ejemplo del subapartado anterior sólo había un emisor y un receptor unidos por una fibra óptica. En el mundo de las comunicaciones, y de las redes de computadores en particular, el medio que se utiliza para comunicarse suele estar compartido.
+</center>
+
+<center>
+	En el caso de la televisión o la radio, existen diferentes canales y emisoras que están compartiendo el medio. A fin de que no haya problemas, hay una regulación del espectro radioeléctrico: se tiene cuidado de que cada uno de los canales tenga asignada una frecuencia determinada y que no haya más de un canal usando la misma frecuencia.
+</center>
+
+<center>
+	<h2>
+		4.3.1.2 Redes Conmutadas
+	</h2>
+</center>
+
+<center>
+	Cuando se va a enviar datos a largas distancias (e incluso a no tan largas), este debe pasar por varios nodos intermedios. Los cuáles  son los encargados de dirigir los datos para que lleguen a su destino. Por lo cual se hace uso de lo que es una red conmutada.  ya que estas Consisten en un conjunto de nodos interconectados entre sí, a través de medios de transmisión , formando así  la mayoría de las veces una topología mallada, donde la información se traslada encaminándola del nodo de origen al nodo destino mediante conmutación entre nodos intermedios. 
+</center>
+
+<center>
+	<b>Una transmision de este tipo tiene 3 fases:</b>
+<ol>-Establecimiento de la conexión.</ol>
+<ol>-Transferencia de la información.</ol>
+<ol>-Liberación de la conexión.</ol>
+
+</center>
+
+<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad4.html"><input type="button" value="Unidad 4"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+	
+</body>
+</html>

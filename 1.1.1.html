@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>1.1.1 Clasicas</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="1.1.html">1.1 Modelos de arquitectura de computo</a></li>
+			<li><a href="1.1.1.html">1.1.1 Clasicas</a></li>
+			<li><a href="1.1.2.html">1.1.2 Segmentadas</a></li>
+			<li><a href="1.1.3.html">1.1.3 De multiprocesamiento</a></li>
+		</ul>
+	</nav>
+</header>
+
+<center><h2>1.1.1 Clasicas</h2></center>
+<CENTER>Estas arquitecturas se desarrollaron en las primeras computadoras electromecánicas y de tubos de vacío. Aun son usadas en procesadores empotrados de gama baja y son la base de la mayoría de las arquitecturas modernas. </CENTER>
+
+
+<h2><center>Arquitectura Mauchly-Eckert (Von Newman)</center></h2>
+
+<CENTER>Esta arquitectura fue utilizada en la computadora ENIAC. Consiste en una unidad central de proceso que se comunica a través de un solo bus con un banco de memoria en donde se almacenan tanto los códigos de instrucción del programa, como los datos que serán procesados por este. </centre>
+
+<center>Ejemplo de esta versatilidad es el funcionamiento de los compiladores, los cuales son programas que toman como entrada un archivo de texto conteniendo código fuente y generan como datos de salida, el código máquina que corresponde a dicho código fuente (Son programas que crean o modifican otros programas).</CENTER>
+
+<center><h2>Desventajas:</h2></center>
+<center>Es que el bus de datos y direcciones  único se convierte en un cuello de botella por el cual debe pasar toda la información que se lee de o se escribe a la memoria, obligando a que todos los accesos a esta sean secuenciales.</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\5.jpg" height="200" width="400"></center>
+
+<h2><center>Arquitectura Harvard</center></h2>
+
+<center>
+	Esta arquitectura surgió en la universidad del mismo nombre, poco después de que la arquitectura Von Newman apareciera en la universidad de Princeton. Al igual que en la  arquitectura Von Newman, el programa se almacena como un código numérico en la memoria, pero no en el mismo espacio de memoria ni en el mismo formato que los datos. Por ejemplo, se pueden almacenar las instrucciones en doce bits en la memoria de programa, mientras los datos de almacenan en ocho bits en una memoria aparte.
+</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\6.jpg" height="200" width="400"></center>
+
+<center>
+	En la actualidad la mayoría de los procesadores modernos se conectan al exterior de manera similar a a la arquitectura Von Newman, con un banco de memoria masivo único, pero internamente incluyen varios niveles de memoria cache con bancos separados en cache de programa y cache de datos, buscando un mejor desempeño sin perder la versatilidad.
+</center>
+
+<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad1.html"><input type="button" value="Unidad 1"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>

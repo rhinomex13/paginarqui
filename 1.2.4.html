@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>1.2.4 Buses</title>
+</head>
+<body>
+<center><h2>1.2.4 Buses</h2></center>
+<center>BUS: Elemento fundamental de intercomunicación en la arquitectura de Von Newmann. Se define mediante:
+<li> Número y tipo de líneas que lo componen.</li>
+<li> Protocolo de transmisión de información.</li>
+<li> Consta de un camino que permite comunicar selectivamente un cierto número de componentes o dispositivos, de acuerdo a unas ciertas reglas o normas de conexión.</li></center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\Buses.png" height="200" width="400"></center>
+
+<center>– Enlace: Elemento que permite transmitir información entre dos o más dispositivos.
+– Conmutador: Elemento que permite encaminar la información entre varios enlaces, activando unos e inhibiendo otros.
+– Multiplexado temporal: Utilización de las mismas líneas del bus para enviar en momentos distintos, informaciones distintas. En estos buses de incluyen señales adicionales para identificar qué información está circulando por el bus en cada momento.
+• Sistema Abierto:
+– Sistema que permite acoplar placas de distintos fabricantes.
+– Hasta hace unos años el estudio de los buses era algo que no se hacía, dado que cada fabricante desarrollaba su propio bus.
+– Los sistemas abiertos supusieron la creación de estándares que garantizan la compatibilidad entre las placas diseñadas por distintos fabricantes.</center>
+
+<center><h2>1.2.4.2 Tipo de buses</h2></center>
+<center>
+<ol>- SERIE y PARALELO: los primeros transmiten bit a bit y los segundos varios bits a la vez.</ol>
+<ol> - MULTIPLEXADOS y NO MULTIPLEXADOS o DEDICADOS: los multiplexados realizan diferentes funciones en función de las necesidades del momento.</ol>
+<ol> - Ejemplo: bus compartido para direcciones y datos ahorro en Hardware y por lo tanto en costos.
+<ol> - CENTRALIZADOS y DISTRIBUIDOS: necesidad de determinar qué elemento transmite y cuál recibe. Generalmente existe administración centralizada por la CPU o procesador.</ol>
+<ol> - SÍNCRONOS y ASÍNCRONOS (temporización): cómo ocurren los diferentes eventos (comienzo, fin,...) implicados en la transmisión de información.</ol></center>
+
+<center><h2>1.2.4.3 Estructura de buses</h2></center>
+<center>
+<ol> - Los buses se componen de líneas eléctricas que transmiten un “0” (cero voltios) o un “1” (más de cero voltios).</ol>
+<ol> - Líneas/bus de datos: camino para transferir datos entre el resto de componentes de un computador.</ol>
+<ol>Su anchura (número de líneas eléctricas) suele ser una potencia de dos (8=23, 16=24, 32=25, 64=26,...).Estructura de los Buses</ol>
+<ol>- Líneas/bus de direcciones: designan la posición/dirección de los datos. Son salidas de la CPU/procesador y determinan capacidad de direccionamiento.</ol>
+<ol>- Líneas/bus de control: controlan el acceso y uso de las líneas/buses anteriores.</ol>
+</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\Estructuradelosbuses
+.jpg" height="200" width="400"></center>
+
+<center><h2>1.2.4.3 Jerarquia de buses</h2></center>
+<center>
+Compatibilidad entre buses:
+<ol>Sólo si son eléctricamente idénticos. Las características de los diferentes tipos de buses deben estar normalizadas. Ejemplo: bus PCI, AGP, USB, FireWire...Jerarquías de Buses</ol>
+<ol>Antiguamente sólo existía un bus principal que lo conectaba todo: bus del sistema.
+<ol>Actualmente existe un conjunto de buses conectados entre sí y formando una jerarquía.</ol>
+<ol>Facilita la mejora del rendimiento de todo el computador al agrupar dentro de los diferentes tipos de buses aquellos componentes del ordenador que tienen aproximadamente la misma velocidad de transmisión de la información.</ol>
+<ol>Mientras más lejos del CPU, buses más lentos y normalmente de menos líneas de datos. Jerarquías de Buses</ol>
+<ol>Varios tipos de buses en función de su posición dentro de la jerarquía:
+<ol>Bus de CPU o “bus local” del procesador: elementos más rápidos tales como la memoria caché.</ol>
+<ol>Bus local ó bus del Sistema (Front Side Bus): conecta elementos tales como la memoria principal o dispositivos rápidos (por ejemplo AGP).</ol>
+<ol>Bus de expansión y/o E/S: PCI, USB, ATA, SCSI,...</ol>
+</center>
+
+<center><img src="D:\Arqui\Imagenes de unidades\Unidad1\Jerarquia.jpg" height="200" width="400"></center>
+
+<center><h2>1.2.5 Interrupciones</h2></center>
+
+<center><b>Hay tres tipos de interrupciones: Reset del sistema, no enmascarables (NMI) y enmascarables.</b></center>
+
+<center><ol>
+	Las enmascarables puedes ser habilitadas o deshabilitadas individualmente o mediante el flag e habilitación general (GIE).
+</center></ol>
+<center><ol>
+	Las no enmascarables sólo puedes ser habilitadas o deshabilitadas individualmente (NMIIE, ACCVIE, OFIE). El flag de habilitación general no les afecta.
+</center></ol>
+<center><ol>
+	Una NMI puede ser generada por tres fuentes: Un flanco en el pin RST/NMI cuando está configurado en modo NMI; un fallo en el oscilador o condiciones de error con el cristal oscilador;
+</center></ol>
+<center>
+<li> Finaliza instrucción en ejecución, si la interrupción está habilitada y el bit GIE=1 se acepta la interrupción.</li> 
+<li> Se pone en pila PC.</li> 
+<li> Se pone en pila SR.</li> 
+<li> Se selecciona la interrupción más prioritaria de las que pidan servicio.</li> 
+<li> El flag de petición de interrupción es reseteado automáticamente. </</li> li> 
+<li> Los demás flags siguen pidiendo interrupción.</li> 
+<li> El SR es limpiado a excepción del SCG0, el cual no cambia. Esto termina cualquier modo de bajo consumo.</li> 
+<li> El contenido del vector de interrupción es volcado en PC, el programa continua con la ejecución de la rutina de servicio a la interrupción.</li> 
+</center>
+<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad1.html"><input type="button" value="Unidad 1"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>

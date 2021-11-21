@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+	<title>3.1.4 Controlador de interrupciones</title>
+</head>
+<body>
+<header>
+		<nav>
+			<li><a href="3.1.html">3.1 Chip set</a></li>
+			<li><a href="1.2.1.1.html">3.1.1 Unidad Central de Procesamineto</a></li>
+			<li><a href="3.1.2.html">3.1.2 Controlador de bus</a></li>
+			<li><a href="3.1.3.html">3.1.3 Puertas de Entrada y Salida</a></li>
+			<li><a href="3.1.4.html">3.1.4 Controlador de interrupciones</a></li>
+			<li><a href="3.1.5.html">3.1.5 Controlador de Acceso Directo a Memoria (DMA)</a></li>
+			<li><a href="3.1.6.html">3.1.6 Circuitos de Temporizacion</a></li>
+			<li><a href="3.1.7.html">3.1.7 Circuitos de Control</a></li>
+			<li><a href="3.1.8.html">3.1.8 Controladores de Video</a></li>
+		</nav>
+	</header>
+
+	<center><h2>3.1.4 Controlador de interrupciones</h2></center>
+
+	<center>
+		Este circuito integrado controla las interrupciones del sistema. Como el microprocesador sólo posee dos entradas de interrupción, y puede controlar muchas más, es necesario algún integrado que no permita ello. 
+	</center>
+
+	<center>
+		El controlador recibe el conjunto de señales de interrupción
+procedentes de los dispositivos, toma la decisión de cuál es la más
+prioritaria, y envía una única señal al procesador.
+	</center>
+
+	<center>
+		<h3>
+			Ciclo de reconocimiento de interrupcion
+		</h3>
+	</center>
+
+	<center>
+		1 - Tras la activación de una línea IR, el controlador activa la
+salida INTR señalándole a la CPU la existencia de una
+interrupción activada.
+	</center>
+
+	<center>
+		2 - Al recibir la señal, el procesador da un pulso en su salida
+INTA indicando que comienza un ciclo de reconocimiento de
+interrupción.
+	</center>
+
+	<center>
+		3 - Al recibir el controlador el pulso por su entrada INTA
+comienza a arbitrar las interrupciones recibidas y selecciona la
+más prioritaria.
+	</center>
+
+	<center>
+		4 - Se emite un segundo pulso por la línea INTA del procesador (o
+controlador de bus) que utiliza el controlador para depositar en
+el bus el vector correspondiente a la interrupción de mayor
+prioridad.
+	</center>
+
+	<center>
+		5 - El procesador obtiene la dirección de la rutina de interrupción
+a partir de este dato y salta a ella. Almacena el registro de flags
+y la dirección de retorno, deshabilita las interrupciones y
+comienza a ejecutar la rutina.
+	</center>
+
+	<p>
+		Si quieres regresar al temario de la unidad uno presiona aqui
+	<a href="Unidad3.html"><input type="button" value="Unidad 3"></a>
+	</p>
+
+	<p>
+		Si quieres regresar a la pantalla principal presiona aqui
+	<a href="PaginaPrincipal.html"><input type="button" value="PaginaPrincipal"></a>
+	</p>
+</body>
+</html>
